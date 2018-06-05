@@ -1,12 +1,12 @@
-.project/*
+**/.project
 
-/.metadata/
-*/.recommenders/
-*/RemoteSystemsTempFiles/
-*/.project/
-*/.settings/
-*/.classpath/
-*/target/
+**/.metadata/
+**/.recommenders/
+**/RemoteSystemsTempFiles/
+**/.project/
+**/.settings/
+**/.classpath
+**/target/
 
 # Se agregan patrones a omitir
 .metadata
