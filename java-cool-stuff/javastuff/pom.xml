@@ -11,6 +11,7 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<testng.version>6.8</testng.version>
+		<logback.version>1.2.3</logback.version>
 	</properties>
 
 	<build>
@@ -28,10 +29,16 @@
 	</build>
 
 	<dependencies>
+		<!-- Pruebas unitarias -->
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<!-- Loggeo -->
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
 		</dependency>
 	</dependencies>
 
@@ -43,11 +50,16 @@
 				<version>${testng.version}</version>
 				<scope>test</scope>
 			</dependency>
+			<dependency>
+				<groupId>ch.qos.logback</groupId>
+				<artifactId>logback-classic</artifactId>
+				<version>${logback.version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
 	<modules>
 		<module>lambda-expressions</module>
 	</modules>
-	
+
 </project>
