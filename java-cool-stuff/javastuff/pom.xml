@@ -60,6 +60,8 @@
 
 	<modules>
 		<module>lambda-expressions</module>
+		<module>streams</module>
+		<module>generics</module>
 	</modules>
 
 </project>
